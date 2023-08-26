@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <!-- linking bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- linking css file -->
+    <link rel="stylesheet" href="/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <h1 class="mainHeading">Calculator App</h1>
+
+    <div class="container">
+
+        <div class="row result-row">
+            <input class="input" type="text"">
+        </div>
+
+        <div class="row row-1">
+            <div class="col">
+                <button type="button" class="btn btn-primary btn-sm btn-CE">CE</button>
+            </div>
+            <div class="col">
+                <button type="button" class="btn btn-primary btn-sm btn-RESET">%</button>
+            </div>
+            <div class="col">
+                <button type="button" class="btn btn-primary btn-sm btn-DELETE">DEL</button>
+            </div>
+            <div class="col">
+                <button type="button" class="btn btn-primary btn-sm btn-DIVIDE">/</button>
+            </div>
+        </div>
+        <div class="row row-2 no-gutters">
+            <div class="col">
+                <button type="button" class="btn btn-primary btn-sm btn-7">7</button>
+            </div>
+            <div class="col">
+                <button type="button" class="btn btn-primary btn-sm btn-8">8</button>
+            </div>
+            <div class="col">
+                <button type="button" class="btn btn-primary btn-sm btn-9">9</button>
+            </div>
+            <div class="col">
+                <button type="button" class="btn btn-primary btn-sm btn-MULTIPLY">*</button>
+            </div>
+        </div>
+        <div class="row row-3">
+            <div class="col">
+                <button type="button" class="btn btn-primary btn-sm btn-4">4</button>
+            </div>
+            <div class="col">
+                <button type="button" class="btn btn-primary btn-sm btn-5">5</button>
+            </div>
+            <div class="col">
+                <button type="button" class="btn btn-primary btn-sm btn-6">6</button>
+            </div>
+            <div class="col">
+                <button type="button" class="btn btn-primary btn-sm btn-MINUS">-</button>
+            </div>
+        </div>
+        <div class="row row-4">
+            <div class="col">
+                <button type="button" class="btn btn-primary btn-sm btn-1">1</button>
+            </div>
+            <div class="col">
+                <button type="button" class="btn btn-primary btn-sm btn-2">2</button>
+            </div>
+            <div class="col">
+                <button type="button" class="btn btn-primary btn-sm btn-3">3</button>
+            </div>
+            <div class="col">
+                <button type="button" class="btn btn-primary btn-sm btn-PLUS">+</button>
+            </div>
+        </div>
+        <div class="row row-5">
+            <div class="col col-3">
+                <button type="button" class="btn btn-primary btn-sm btn-DOT">.</button>
+            </div>
+            <div class="col col-3">
+                <button type="button" class="btn btn-primary btn-sm btn-0">0</button>
+            </div>
+            <div class="col col-6">
+                <button type="button" class="btn btn-primary btn-sm btn-EQUALS">=</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+
+</html>

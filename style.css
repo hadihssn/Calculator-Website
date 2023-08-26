@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: linear-gradient(45deg, #50aabe 0%, #cfbebe 100%)
+}
+
+h1.mainHeading{
+    text-align: center;
+    margin-top: 5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+div.container{
+    /* border: 2px solid red; */
+    border-radius: 1rem;
+    width: 70%;
+    max-width: 80vw;
+
+    /* code for centering a div vertically and horizontally */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+div.row{
+    /* border: 2px solid green; */
+    margin: 0;
+    padding: 0;
+    /* border-radius: 0.4rem; */
+    /* padding: 0.5rem; */
+    /* border-bottom: 0.001rem solid #5b6a7d; */
+    column-gap: 0px;
+}
+
+div.col{
+    /* border: 2px solid blue; */
+    padding: 0;
+    margin: 0;
+    /* border-right: 0.01rem solid #374353; */
+    column-gap: 0px;
+}
+
+button.btn{
+    width: 100%;
+    margin: auto;
+    height: 100%;
+    height: 4.5rem;
+
+    padding: 0;
+    border-radius: 0;
+
+    cursor: pointer;
+}
+
+.btn-0, .btn-1, .btn-2, .btn-3, .btn-4, .btn-5, .btn-6, .btn-7, .btn-8, .btn-9{
+    background-color: #5b6a7d;
+    border-color: #5b6a7d;
+}
+
+div.col button.btn-7:hover, div.col button.btn-8:hover, div.col button.btn-9:hover, div.col button.btn-6:hover, div.col button.btn-5:hover, div.col button.btn-4:hover, div.col button.btn-3:hover, div.col button.btn-2:hover, div.col button.btn-1:hover, div.col button.btn-0:hover{
+    background-color: #5b6a7d;
+    border: #5b6a7d;
+}
+
+.btn-CE, .btn-RESET, .btn-DELETE, .btn-DIVIDE, .btn-MULTIPLY, .btn-MINUS, .btn-PLUS, .btn-DOT{
+    background-color:  #374353;
+    border-color: #374353;
+}
+
+div.col button.btn-CE:hover, div.col button.btn-RESET:hover, div.col button.btn-DELETE:hover, div.col button.btn-DIVIDE:hover, div.col button.btn-MULTIPLY:hover, div.col button.btn-MINUS:hover, div.col button.btn-PLUS:hover, div.col button.btn-DOT:hover{
+    background-color:  #374353;
+    border-color: #374353;
+}
+
+.btn-EQUALS{
+    background: rgb(255,55,5);
+    background: linear-gradient(90deg, rgba(255,55,5,1) 0%, rgba(230,130,8,1) 51%, rgba(255,184,0,1) 87%);
+    border-top-color: #374353;
+    border-left-color: #5b6a7d;
+    border-bottom-color: #374353;
+    border-color: linear-gradient(90deg, rgba(255,55,5,1) 0%, rgba(230,130,8,1) 51%, rgba(255,184,0,1) 87%);
+}
+
+div.col button.btn-EQUALS{
+    border-bottom-right-radius: 0.5rem;
+}
+
+div.col button.btn-DOT{
+    border-bottom-left-radius: 0.5rem;
+}
+
+div.row-5{
+    border-bottom-right-radius: 0.5rem;
+}
+
+.result-row{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0px;
+}
+
+.result-row input{
+    text-align: right;
+    flex: 1;
+    font-size: 1.8rem;
+    border: none;
+    background-color: #505c68;
+    /* padding: 0.2rem; */
+    height: 5.5rem;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    color: white
+}
+
+/* remove border from a input field when active */
+.result-row input:focus{
+    outline: none;
+    box-shadow: 0px 0px 8px 3px rgb(216, 213, 213);    
+}
